@@ -1,6 +1,5 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
+﻿--Create Tables for Employee Database
+-- *Exported from QuickDBD: https://www.quickdatabasediagrams.com*
 
 CREATE TABLE "titles" (
     "title_id" VARCHAR(10)   NOT NULL,
@@ -63,4 +62,3 @@ REFERENCES "employee" ("emp_no");
 
 ALTER TABLE "salaries" ADD CONSTRAINT "fk_salaries_emp_no" FOREIGN KEY("emp_no")
 REFERENCES "employee" ("emp_no");
-
