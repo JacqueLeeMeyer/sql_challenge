@@ -2,7 +2,7 @@
 SELECT e.emp_no, e.last_name, e.first_name, e.sex, s.salary
 FROM employee AS e
 JOIN salaries AS s ON e.emp_no=s.emp_no;
---SELECT COUNT (emp_no) FROM Employee_Table;
+
 
 --Data Analysis Question 2
 SELECT first_name, last_name, hire_date
